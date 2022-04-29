@@ -1,7 +1,7 @@
 class User {
   //defining model class instances
   String? login;
-  String? id;
+  int? id;
   String? avatarUrl;
   String? type;
   String? error = '';
@@ -32,7 +32,6 @@ class User {
     error = errorMessage;
   }
 }
-
 
 // class User {
 //   String? login;

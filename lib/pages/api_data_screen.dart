@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:testertype/bloc/api%20/apicall_bloc.dart';
+import 'package:testertype/bloc/api/apicall_bloc.dart';
 
 class ApiCallPage extends StatefulWidget {
   const ApiCallPage({Key? key}) : super(key: key);
@@ -28,12 +28,12 @@ class _ApiCallPageState extends State<ApiCallPage> {
       }
 
       if (state is ApicallLoaded) {
-          print("App is in loaded phase");
+        print("App is in loaded phase");
         return Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               ListTile(
-                leading: Text(state.user.id!),
+                leading: Text(state.user.id!.toString()),
                 title: Text(state.user.login!),
                 subtitle: Text(state.user.type!),
                 trailing: CircleAvatar(
