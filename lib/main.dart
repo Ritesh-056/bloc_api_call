@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:testertype/bloc/api%20/apicall_bloc.dart';
+import 'bloc/api/apicall_bloc.dart';
 import 'package:testertype/pages/api_data_screen.dart';
 import 'package:testertype/services/github_api.dart';
 
@@ -24,8 +24,7 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     ApiService().getApiData().then((usr) {
-      
-      
+      print(usr[0].id);
     }).catchError((err) {
       print("Error ==>${err.toString()}");
     });

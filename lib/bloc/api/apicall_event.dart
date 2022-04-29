@@ -1,7 +1,6 @@
 part of 'apicall_bloc.dart';
 
-abstract class ApicallEvent extends Equatable{
-  
+abstract class ApicallEvent extends Equatable {
   @override
   List<Object> get props => [];
 }
